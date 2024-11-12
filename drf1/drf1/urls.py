@@ -5,5 +5,5 @@ from task.views import get_notes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('notes/', get_notes, name='notes')
+    path('tasks/', get_notes, name='notes')
 ]
