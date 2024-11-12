@@ -9,5 +9,5 @@ from .serializers import TaskSerializer
 @api_view(['GET'])
 def get_notes(request):
     tasks = Task.objects.all()
-    serializer = TaskSerializer(notes, many=True)
-    return Response("Hallo World")
+    serializer = TaskSerializer(tasks, many=True)
+    return Response(serializer.data)
