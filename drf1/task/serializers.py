@@ -4,5 +4,5 @@ from .models import Task
 class TasksSerializers(serializers.ModelSerializer):
     class Meta:
         model = Task
-        fields = ['id', 'title']
+        fields = ['id', 'title','description']
 
